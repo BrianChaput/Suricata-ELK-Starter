@@ -6,7 +6,7 @@ This project uses Docker to quickly run Suricata IDS with the ELK stack for live
 ## Setup
 
 ```bash
-git clone <repo>
+git clone https://github.com/BrianChaput/Suricata-ELK-Starter.git
 cd Suricata-ELK-IDS
 ```
 
@@ -21,6 +21,7 @@ docker-compose up
 ```
 
 Access Kibana at `http://localhost:5601`.
+
 Add rules to /rules/custom.rules
 ## Simulate Traffic
 
