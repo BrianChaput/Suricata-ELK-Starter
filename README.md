@@ -7,7 +7,7 @@ This project uses Docker to quickly run Suricata IDS with the ELK stack for live
 
 ```bash
 git clone https://github.com/BrianChaput/Suricata-ELK-Starter.git
-cd Suricata-ELK-IDS
+cd Suricata-ELK-Starter
 ```
 
 Check active interface with
