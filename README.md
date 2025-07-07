@@ -10,18 +10,18 @@ git clone <repo>
 cd Suricata-ELK-IDS
 ```
 
-check active interface with
+Check active interface with
 ```bash
 ip a | grep inet
 ```
-update suricata.yaml with correct interface if needed
+Update suricata.yaml with correct interface if needed
 then run
 ```bash
 docker-compose up
 ```
 
 Access Kibana at `http://localhost:5601`.
-
+Add rules to /rules/custom.rules
 ## Simulate Traffic
 
 ```bash
