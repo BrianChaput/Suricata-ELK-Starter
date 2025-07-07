@@ -1,0 +1,10 @@
+
+af-packet:
+  - interface: ens33
+    cluster-id: 99
+    defrag: yes
+
+outputs:
+  - fast:
+      enabled: yes
+      filename: /var/log/suricata/fast.log

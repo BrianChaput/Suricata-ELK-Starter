@@ -1,0 +1,6 @@
+
+alert http any any -> any any (msg:"Potential Shellshock Attempt"; content:"() {"; http_uri; sid:1000001; rev:1;)
+alert icmp any any -> any any (msg:"ICMP Echo Request (Ping) Detected"; itype:8; sid:1000002; rev:1;)
+alert http any any -> any any (msg:"Suspicious HTTP User-Agent: curl"; content:"User-Agent|3A| curl"; http_header; sid:1000003; rev:1;)
+alert http any any -> any any (msg:"Suspicious EXE download over HTTP"; content:".exe"; http_uri; sid:1000004; rev:1;)
+alert http any any -> any any (msg:"Possible remote shell access attempt"; content:"/bin/sh"; http_uri; sid:1000005; rev:1;)
