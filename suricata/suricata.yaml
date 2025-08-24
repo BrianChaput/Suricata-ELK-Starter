@@ -5,6 +5,18 @@ af-packet:
     defrag: yes
 
 outputs:
-  - fast:
+  # Write structured JSON events into Logstash/Elasticsearch.
+  # File location is under the mounted ./logs directory.
+  - eve-log:
       enabled: yes
-      filename: /var/log/suricata/fast.log
+      filename: /var/log/suricata/eve.json
+      types:
+        - alert
+        - http
+        - dns
+        - tls
+        - files
+        - ssh
+        - drop
+        - flow
+        - stats
