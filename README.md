@@ -1,4 +1,4 @@
-# Suricata + ELK (recommended: WSL2 / Linux)
+# Suricata + ELK Repo
 
 This repository boots a small Suricata IDS + Elastic (Elasticsearch, Kibana) stack and uses Filebeat to ship Suricata's JSON `eve.json` to Elasticsearch.
 
